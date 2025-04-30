@@ -9,6 +9,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
   <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY1wU3RtIX5uW-GyfJq1Hjj84zt_SjoYNGsg&s">
   <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+  <script>
+    window.onload = function () {
+      if (!window.location.hash.includes("#refreshed")) {
+        window.location.href += "#refreshed";
+        window.location.reload();
+      }
+    };
+  </script>
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
   <script type="text/javascript" src="js/jquery.glide.min.js"></script>
 </head>
